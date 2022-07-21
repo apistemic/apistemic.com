@@ -1,16 +1,46 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "@fontsource/roboto-mono";
+@import "@fontsource/roboto-slab";
+@import "@fontsource/cabin";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@layer base {
+    .font-title {
+        font-family: "Roboto Mono", monospace;
+        font-weight: 700;
+    }
+
+    .font-heading {
+        font-family: "Cabin", sans-serif;
+        font-weight: 500;
+    }
+
+    .font-regular {
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+    }
+
+    h1 {
+        @apply text-4xl font-title;
+        color: #888;
+        letter-spacing: -1px;
+        line-height: 120%;
+    }
+
+    h2 {
+        @apply text-2xl font-heading;
+        color: #CCC;
+        line-height: 150%;
+    }
+
+    h3 {
+        @apply text-xl font-heading;
+    }
+
+    body {
+        @apply font-regular;
+        color: #BBB;
+    }
 }
