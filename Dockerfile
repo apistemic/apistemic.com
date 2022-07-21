@@ -1,8 +1,5 @@
-FROM node
+FROM node:17.5
 
 WORKDIR /code
-COPY package.json .
-COPY package-lock.json .
-RUN npm install
 
 ENV PATH /code/node_modules/.bin:$PATH
