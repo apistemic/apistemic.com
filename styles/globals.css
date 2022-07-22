@@ -23,15 +23,13 @@
     }
 
     h1 {
-        @apply text-4xl font-title;
-        color: #888;
-        letter-spacing: -1px;
+        @apply text-4xl font-title text-gray-700;
+        letter-spacing: -0.05em;
         line-height: 120%;
     }
 
     h2 {
-        @apply text-2xl font-heading;
-        color: #CCC;
+        @apply text-2xl font-heading text-gray-500;
         line-height: 150%;
     }
 
@@ -40,7 +38,6 @@
     }
 
     body {
-        @apply font-regular;
-        color: #BBB;
+        @apply font-regular text-gray-400 bg-slate-100;
     }
 }
